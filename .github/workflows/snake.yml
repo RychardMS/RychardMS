@@ -1,24 +1,39 @@
 name: Generate Snake
 
 on:
-  schedule: 
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-  push:
-    branches: ["main"]
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:       
+
+permissions:
+  contents: write    
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: RychardMS
-          outputs: dist/snake.svg
 
-      - name: Push snake
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate Snake Animation
+        uses: Platane/snk@v3
+        with:
+          github_user_name: "RychardMS"
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Push Snake Animation
         uses: EndBug/add-and-commit@v9
         with:
-          add: "dist/snake.svg"
+          author_name: RychardMS
+          author_email: RychardMS@users.noreply.github.com
           message: "Generate snake"
+          add: "dist/*"
+
+      - name: Upload output as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: snake-output
+          path: dist
