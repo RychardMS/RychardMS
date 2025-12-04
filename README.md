@@ -37,5 +37,8 @@
 
 <br clear="both">
 
+<div align="left">
+  <img src="https://raw.githubusercontent.com/RychardMS/RychardMS/main/dist/github-contribution-grid-snake-dark.svg" />
+</div>
 
 ###
