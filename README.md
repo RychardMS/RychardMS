@@ -3,8 +3,8 @@
 ###
 
 <div align="left">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=RychardMS&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150em"/>
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs?username=RychardMS&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150em"/>
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=RychardMS&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=midnight-purple&locale=en&hide_border=false" height="150em"/>
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs?username=RychardMS&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=midnight-purple&hide_border=false" height="150em"/>
 </div>
 
 ###
@@ -38,7 +38,7 @@
 <br clear="both">
 
 <div align="left">
-  <img src="https://raw.githubusercontent.com/RychardMS/RychardMS/main/dist/github-contribution-grid-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/RychardMS/RychardMS/main/dist/github-contribution-grid-snake-dark.svg"/>
 </div>
 
 ###
